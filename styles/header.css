@@ -1,0 +1,30 @@
+header {
+    #primary {
+        padding-block: 1rem;
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            @media (width >=80em) {
+                padding-block: 1.25rem;
+                gap: .5rem;
+            }
+        }
+
+        & div:nth-child(2) {
+            margin-inline: auto;
+        }
+
+        & div:nth-child(3) {
+            justify-self: end;
+        }
+    }
+
+    #secondary {
+        padding-block: 0.875rem;
+        justify-content: space-between;
+        border: 1px solid var(--stroke-color);
+        border-inline: none;
+    }
+}
