@@ -1,0 +1,56 @@
+#highlights {
+    img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .25rem;
+    }
+
+    & .card {
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            background: linear-gradient(180deg,
+                    transparent 0%,
+                    #020617);
+        }
+
+        figcaption {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+
+            &:has(.text-lg) {
+                padding: .75rem;
+            }
+
+            span {
+                background-color: var(--brand-color-dark);
+                padding: 0.25rem .5rem;
+                border-radius: .25rem;
+                font: var(--text-sm);
+                font-size: 0.625rem;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font: var(--h3);
+            }
+        }
+    }
+
+    & #main-news {
+         & img {
+            height: 26rem;
+        }
+
+        h2 {
+           font-size: 1.5rem;
+        }
+    }
+}
