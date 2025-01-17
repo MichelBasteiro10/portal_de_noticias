@@ -1,4 +1,6 @@
 #highlights {
+    margin-bottom: 2rem;
+
     img {
     height: 100%;
     width: 100%;
@@ -53,4 +55,9 @@
            font-size: 1.5rem;
         }
     }
+}
+
+#read-more {
+    margin-bottom: 10rem;
+    
 }

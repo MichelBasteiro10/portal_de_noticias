@@ -36,10 +36,49 @@ a:hover {
     color: var(--brand-color-light);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font: inherit;
 }
 
 img {
     max-width: 100%;
+}
+
+section header {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    h3 {
+        font: var(--h3);
+        font-weight: 600;
+        color: var(--text-color-secondary);
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+        gap: .25rem;
+
+        strong {
+            font: var(--h3);
+            font-weight: 600;
+            line-height: 145%;
+        }
+
+        span {
+            background-image: url(../assets/icons/ArrowRigth.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        &:hover span {
+            background-image: url(../assets/icons/ArrowRightHover.svg);
+        }
+    }
 }
