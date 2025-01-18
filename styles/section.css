@@ -2,10 +2,10 @@
     margin-bottom: 2rem;
 
     img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: .25rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .25rem;
     }
 
     & .card {
@@ -38,26 +38,26 @@
     }
 
     & #main-news {
-         & img {
+        & img {
             height: 26rem;
         }
 
         h2 {
-           font-size: 1.5rem;
+            font-size: 1.5rem;
         }
     }
 }
 
 #read-more {
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 
     header {
         border-top: 1px solid var(--stroke-color);
         padding-top: .75rem;
     }
-    
-    & > div {
-        margin-top: 1.5rem;
+
+    &>div {
+        margin-block: 1.5rem;
 
         p {
             font: var(--h2);
@@ -73,6 +73,37 @@
 
         figure {
             position: relative;
+        }
+    }
+}
+
+#AI-highlights {
+    img {
+        margin-top: 3px;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    header {
+        border-top: 1px solid var(--stroke-color);
+        padding-top: .75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    figure {
+        .content {
+
+            & h2 {
+                margin-block: .5rem 0.25rem;
+                font: var(--h2);
+                width: 100%;
+            }
+
+            & p {
+                font: var(--text);
+                line-height: 160%;
+                color: var(--text-color-secondary);
+            }
         }
     }
 }

@@ -9,6 +9,10 @@
     display: grid;
 }
 
+.flex {
+    display: flex;
+}
+
 .grid-flow-col {
     grid-auto-flow: column;
 }
