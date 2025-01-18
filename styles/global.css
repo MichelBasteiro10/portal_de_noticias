@@ -82,3 +82,12 @@ section header {
         }
     }
 }
+
+.content-tag {
+    background-color: var(--brand-color-dark);
+    padding: 0.25rem .5rem;
+    border-radius: .25rem;
+    font: var(--text-sm);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+}

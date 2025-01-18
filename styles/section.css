@@ -31,15 +31,6 @@
                 padding: .75rem;
             }
 
-            span {
-                background-color: var(--brand-color-dark);
-                padding: 0.25rem .5rem;
-                border-radius: .25rem;
-                font: var(--text-sm);
-                font-size: 0.625rem;
-                text-transform: uppercase;
-            }
-
             h2 {
                 font: var(--h3);
             }
@@ -59,5 +50,29 @@
 
 #read-more {
     margin-bottom: 10rem;
+
+    header {
+        border-top: 1px solid var(--stroke-color);
+        padding-top: .75rem;
+    }
     
+    & > div {
+        margin-top: 1.5rem;
+
+        p {
+            font: var(--h2);
+            margin-top: .5rem;
+        }
+
+        .content-tag {
+            padding: 0rem .5rem;
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+        }
+
+        figure {
+            position: relative;
+        }
+    }
 }
