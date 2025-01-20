@@ -1,3 +1,8 @@
+main {
+    padding-block: 1rem;
+    margin-bottom: 2.5rem;
+}
+
 #highlights {
     margin-bottom: 2rem;
 
@@ -105,5 +110,39 @@
                 color: var(--text-color-secondary);
             }
         }
+    }
+}
+
+aside {
+    #ads {
+        padding-block: 2rem;
+    }
+
+    header {
+        margin-bottom: 1.5rem;
+    }
+
+    #saw-it-here {
+        gap: 2rem;
+        width: 100%;
+
+        & figure {
+            width: 100%;
+
+            img {
+            margin-top: 3px;
+            height: 4.5rem;
+            width: 4.5rem;
+            object-fit: contain;
+        }
+
+        .cut-content {
+            h2 {
+                margin-top: .5rem;
+                font: var(--h3);
+            }
+        }
+        }
+        
     }
 }

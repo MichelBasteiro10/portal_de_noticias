@@ -83,6 +83,43 @@ section header {
     }
 }
 
+aside header {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    h3 {
+        font: var(--h3);
+        font-weight: 600;
+        color: var(--text-color-secondary);
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+        gap: .25rem;
+
+        strong {
+            font: var(--h3);
+            font-weight: 600;
+            line-height: 145%;
+        }
+
+        span {
+            background-image: url(../assets/icons/ArrowRigth.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        &:hover span {
+            background-image: url(../assets/icons/ArrowRightHover.svg);
+        }
+    }
+}
+
 .content-tag {
     background-color: var(--brand-color-dark);
     padding: 0.25rem .5rem;
