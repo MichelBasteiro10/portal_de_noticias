@@ -1,6 +1,9 @@
 header {
     #primary {
-        padding-block: 1rem;
+        @media (width <= 80em) {
+            padding-block: 1rem;
+        }
+        
 
         & div {
             display: flex;
@@ -26,5 +29,9 @@ header {
         justify-content: space-between;
         border: 1px solid var(--stroke-color);
         border-inline: none;
+
+        @media (width >=80em) {
+            margin-bottom: 7rem;
+        }        
     }
 }

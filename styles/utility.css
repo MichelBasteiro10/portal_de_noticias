@@ -62,4 +62,8 @@
     .desktop-only {
         display: initial;
     }
+
+    .mobile-only {
+        display: none;
+    }
 }

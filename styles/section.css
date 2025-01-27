@@ -51,6 +51,17 @@ main {
             font-size: 1.5rem;
         }
     }
+
+    @media (width >= 80em) {
+        grid-auto-flow: column;
+        
+        & > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        margin-bottom: 5rem;
+    }
 }
 
 #read-more {
@@ -80,6 +91,35 @@ main {
             position: relative;
         }
     }
+
+    @media (width >=80em) {
+        & > div {
+            display: grid;
+            grid-auto-flow: column;
+        }
+    }
+}
+
+#end {
+    @media (width >= 80em) {
+        margin-top: 5rem;
+        display: flex;
+
+        #content {
+            height: 11rem;
+
+            figure {
+                flex-direction: row-reverse;
+                height: 100%;
+            }
+
+            img {
+                height: 11rem;
+                width: 11rem;
+            }
+        }
+    }
+    
 }
 
 #AI-highlights {
@@ -115,7 +155,11 @@ main {
 
 aside {
     #ads {
-        padding-block: 2rem;
+       margin-bottom: 2rem;
+
+       @media (width <= 80em) {
+        margin-block: 2rem;
+       }
     }
 
     header {
